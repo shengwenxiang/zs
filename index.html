@@ -1,17 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>方,只属于你</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>点点滴滴</title>
+    <embed src="xiaoyu.mp3" type="audio/mp3" hidden="false" autostart="true" loop="true">
+    <style type="text/css">
+        .d{
+            width: auto;
+            height: 50%;
+            background-color: aqua;
+        }
+        body {
+                font: normal 100% Helvetica, Arial, sans-serif;
+            }
+        #da{
+            width: auto;
+            height: auto;
+        }
+        p{
+            font-size: 1em;
+            color: palevioletred;
+        }
+        .b{
+            background-color: blueviolet;
+        }
+        #dbut{
+            width: 100%;
+            height: 20%;
+        }
+        .db{
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <div>
-            <p>第一次跟你有时间和空间上的重合大概是2008年，那年我刚来到七小上小学二年级，虽然遇见，但是没有记忆。</p>
-            <p>有记忆的时候就是小学五年级了，那时我们做同桌111111</p>
+        <div id="da">
+            <div class="d" id="1">
+                <p>    第一次跟你有时间和空间上的重合大概是2008年，那年我刚来到七小上小学二年级，虽然遇见，但是没有记忆。</p>
+            </div>
+            <div class="d" id="2">
+                <p>    有记忆的时候就是小学五年级了，那时我们做同桌，一开始还挺好，但是后来却经常发生摩擦，那时的我们多快乐啊！无忧无虑！</p>
+            </div>
+            <div class="d" id="3">
+                <p>    我们被老师调开就是因为那次你把我笔帽扔了出去，刚好被老师看见，于是我们便被调开了，刚开始没感觉，但是时间一长，觉得还是跟你坐同桌好。</p>
+            </div>
+            <div class="d" id="4">
+                <p>    六年级我们被调开的，调开后不知怎么的，我坐在了班里最左边，而你却坐在了班里最右边，幸运的是在同一排，于是我每天上课就扭头看你。</p>
+            </div>
+            <div class="d" id="5">
+                <p>    小学与你发生印象最深的一件事就是一次晚会，有同学在班后面表演节目，那时我们还是同桌，我情不自禁的把我的左胳膊搭到了你的肩膀上，当我意识到时，赶紧收手，你感觉到后就趴在了桌子上不理我了，好想知道你当时在想什么。</p>
+            </div>
+            <div class="d" id="6">
+                <p>    小学的时光匆匆流走，初中把我们俩拉开。初中回小学看老师时叫过你两三次，后来你妈妈的电话号码变成了空号，便再没了联系。</p>
+            </div>
+            <div class="d" id="7">
+                <p>    高中时，虽然我们在同一所高中，但是校区把我们隔开，又是三年。</p>
+            </div>
+            <div class="d" id="8">
+                <p>    大二寒假，微信的叮咚声打破了一切。那天中午突然看见你的微信好友申请，这么久没联系，突然有点不知所措，加上好友，你问我去不去看小学老师，我欣然接受。</p>
+            </div>
+            <div class="d" id="9">
+                <p>    从此，我们便开始了故事，虽然没有什么波澜壮阔，也不是什么爱情故事，但每一件事都会让我喜悦，跟你去公园、去吃饭、去书房······</p>
+            </div>
+            <div class="d" id="10">
+                <p>    说说最近吧。去书店需要48小时核酸，跟你一起做核酸也有好多次，每次站在你身后排队，都有想抱住你的冲动，好想好想抱你一下！！！</p>
+            </div>
+            <div class="d" id="11">
+                <p>    我喜欢你，也许小学你就知道了。自从跟你有了联系，我便暗暗决定，一定要继续那小学未完成的故事。我要执子之手与子偕老，跟你一直一直走下去！！！</p>
+            </div>
+            <div class="d" id="12">
+                <p>非常感谢你能看完！！！</p>
+            </div>
+            <div class="d" id="520">
+                <p>再没有更多了！</p>
+            </div>
+            <div id="dbut">
+                <div class="db" id="dks">
+                    <button class="b" id="kaishi" onclick="kkkk()">开始！</button><br/>
+                </div>
+                <div class="db" id="ds">
+                    <button class="b" id="shang" onclick="ssss()">上一条</button><br/>
+                </div>
+                <div class="db" id="dx">
+                    <button class="b" id="xia" onclick="xxxx()">下一条</button>
+                </div>
+            </div>
+            
         </div>
-    </div>
+        
 </body>
+<script src="jquery-3.1.1.js"></script>
+<script>
+    var dong=1;
+    $("#1").hide();
+    $("#2").hide();
+    $("#3").hide();
+    $("#4").hide();
+    $("#5").hide();
+    $("#6").hide();
+    $("#7").hide();
+    $("#8").hide();
+    $("#9").hide();
+    $("#10").hide();
+    $("#11").hide();
+    $("#12").hide();
+    $("#520").hide();
+    if(dong == 1){
+        $("#shang").hide();
+        $("#xia").hide();
+    }
+    function kkkk(){
+        $("#kaishi").hide();
+        $("#shang").show();
+        $("#xia").show();
+        $("#1").show();
+    }
+    function ssss(){
+        $("#520").hide();
+        dong -= 1;
+        $("#" + dong).fadeIn();
+        for(var i = 1; i<=12; i++){
+            if(i != dong){
+                $("#" + i).hide();
+            }
+        }
+        if(dong <1 || dong > 12){
+            $("#520").show();
+        }
+    }
+    function xxxx (){
+        $("#520").hide();
+        dong += 1;
+        $("#" + dong).fadeIn();
+        for(var i = 1; i<=12; i++){
+            if(i != dong){
+                $("#" + i).hide();
+            }
+        }
+        if(dong <1 || dong > 12){
+            $("#520").show();
+        }
+    }
+</script>
 </html>
